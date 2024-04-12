@@ -1,0 +1,25 @@
+.layout {
+  min-height: 100vh;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  background-color: $lightgrayishblue;
+  grid-template-columns: 3fr;
+  grid-template-rows: 6fr 0.5fr;
+  grid-template-areas:
+    "componente"
+    "footer";
+}
+
+.grid-container {
+  grid-area: componente;
+  justify-self: center;
+  align-self: center;
+  max-width: 1065px;
+  max-height: 572px;
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-rows: 282px 266px;
+  gap: 15px;
+}
